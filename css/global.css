@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 800;
+  font-family: "Raleway", sans-serif;
+}
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong {
+  color: #e43b1b;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+a,
+a:active,
+a:visited {
+  color: #333;
+  text-decoration: none;
+  outline: none !important;
+}
+a:hover,
+a:active:hover,
+a:visited:hover {
+  color: #e43b1b;
+}
+
+label {
+  color: #666;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form-item {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+.form-item p {
+  margin: 0;
+}
+
+p.form-row {
+  margin: 0 0 15px 0 !important;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+form .form-item:nth-child(even) {
+  width: 48%;
+  margin: 0 2% 15px 0;
+}
+form .form-item:nth-child(odd) {
+  width: 48%;
+  margin: 0 0 20px 2%;
+}
+form .form-item.textarea {
+  width: 100%;
+  margin: 0 0 0 0;
+}
+form input[type=submit] {
+  background: #333;
+}
+form input[type=submit]:hover {
+  background: #000;
+}
+form .wpcf7-not-valid-tip {
+  color: #fff;
+  padding: 5px 10px;
+}
+form .wpcf7-response-output {
+  background: #000;
+  border: 2px solid #000;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+form form.sent.wpcf7-response-output {
+  background: #46b450;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=tel],
+textarea,
+select {
+  width: 100%;
+  background: #fafafa;
+  margin-bottom: 10px;
+  font-size: 16px;
+  outline: none !important;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  border-width: 1px 1px 2px 1px;
+  border-radius: 5px;
+  padding: 12px 15px;
+  margin: 0 5px;
+  color: #333;
+  font-family: "Raleway", sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+@media (max-width: 767px) {
+  input[type=text],
+  input[type=email],
+  input[type=password],
+  input[type=tel],
+  textarea,
+  select {
+    padding: 5%;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+button,
+input[type=submit] {
+  color: #fff;
+  background: #e43b1b;
+  padding: 15px 30px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 800;
+  outline: none !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  border-radius: 5px;
+}
+button:hover,
+input[type=submit]:hover {
+  background: #333;
+  color: #fff;
+}
+
+.wpcf7-response-output {
+  color: #666;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1260px;
+  margin: auto;
+  display: flex;
+}
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+@media (orientation: portrait) {
+  .container {
+    padding: 7%;
+  }
+}
+@media (orientation: landscape) {
+  .container .content {
+    width: 75%;
+  }
+}/*# sourceMappingURL=global.css.map */

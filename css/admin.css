@@ -1,0 +1,64 @@
+#wpwrap {
+  background: #fff;
+}
+
+/*--- CADASTRO DE USUARIO ------------------------------------------------------------------------------*/
+.login.login-action-register #login {
+  padding-top: 25px;
+  width: 100%;
+}
+.login.login-action-register #login .notice.notice-info.message.register {
+  display: none;
+}
+.login.login-action-register #login form {
+  padding: 50px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.login.login-action-register #login form p,
+.login.login-action-register #login form .acf-user-register-fields,
+.login.login-action-register #login form .acf-field {
+  display: inline-block;
+  margin: auto;
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.login.login-action-register #login form label {
+  color: #333;
+  font-weight: 700;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+.login.login-action-register #login form select {
+  width: 100%;
+  border: 2px solid #dcdcdc;
+  border-radius: 50px;
+  padding: 10px 16px;
+}
+.login.login-action-register #login form input {
+  border: 2px solid #dcdcdc;
+  border-radius: 50px;
+}
+.login.login-action-register #login form h1 {
+  font-size: 42px;
+  font-weight: 800;
+  margin: 0;
+  color: #bc0000;
+}
+.login.login-action-register #login form h2 {
+  display: none;
+}
+.login.login-action-register #backtoblog,
+.login.login-action-register .language-switcher {
+  display: none;
+}
+.login.login-action-register #nav {
+  padding: 50px 0;
+  text-align: center;
+}
+.login.login-action-register #nav a {
+  color: #fff;
+}/*# sourceMappingURL=admin.css.map */

@@ -1,0 +1,83 @@
+
+@font-face {
+    font-family: 'Uni Sans Light';
+    src: url('fonts/Uni-Sans-Light.woff2') format('woff2'),
+        url('fonts/Uni-Sans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uni Sans SemiBold';
+    src: url('fonts/Uni-Sans-SemiBold.woff2') format('woff2'),
+        url('fonts/Uni-Sans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uni Sans Bold';
+    src: url('fonts/Uni-Sans-Bold.woff2') format('woff2'),
+        url('fonts/Uni-Sans-Bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uni Sans Heavy';
+    src: url('fonts/Uni-Sans-Heavy.woff2') format('woff2'),
+        url('fonts/Uni-Sans-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uni Sans Thin';
+    src: url('fonts/Uni-Sans-Thin.woff2') format('woff2'),
+        url('fonts/Uni-Sans-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Grtsk Light';
+    src: url('fonts/GrtskPeta-Light.eot');
+    src: url('fonts/GrtskPeta-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/GrtskPeta-Light.woff2') format('woff2'),
+        url('fonts/GrtskPeta-Light.woff') format('woff'),
+        url('fonts/GrtskPeta-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Grtsk Medium';
+    src: url('fonts/GrtskPeta-Medium.eot');
+    src: url('fonts/GrtskPeta-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/GrtskPeta-Medium.woff2') format('woff2'),
+        url('fonts/GrtskPeta-Medium.woff') format('woff'),
+        url('fonts/GrtskPeta-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Grtsk';
+    src: url('fonts/GrtskPeta-Regular.eot');
+    src: url('fonts/GrtskPeta-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/GrtskPeta-Regular.woff2') format('woff2'),
+        url('fonts/GrtskPeta-Regular.woff') format('woff'),
+        url('fonts/GrtskPeta-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

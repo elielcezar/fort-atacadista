@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('Uni-Sans-Heavy-Italic.woff2') format('woff2'),
+        url('Uni-Sans-Heavy-Italic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('Uni-Sans-Light.woff2') format('woff2'),
+        url('Uni-Sans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('Uni-Sans-SemiBold-Italic.woff2') format('woff2'),
+        url('Uni-Sans-SemiBold-Italic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('Uni-Sans-SemiBold.woff2') format('woff2'),
+        url('Uni-Sans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('Uni-Sans-Light-Italic.woff2') format('woff2'),
+        url('Uni-Sans-Light-Italic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('Uni-Sans-Bold-Italic.woff2') format('woff2'),
+        url('Uni-Sans-Bold-Italic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('Uni-Sans-Bold.woff2') format('woff2'),
+        url('Uni-Sans-Bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('Uni-Sans-Heavy.woff2') format('woff2'),
+        url('Uni-Sans-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('Uni-Sans-Thin-Italic.woff2') format('woff2'),
+        url('Uni-Sans-Thin-Italic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('Uni-Sans-Thin.woff2') format('woff2'),
+        url('Uni-Sans-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
