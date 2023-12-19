@@ -6,6 +6,67 @@
     const desktop = h < w;
     const menuMobile = document.querySelector('.menu-mobile .mainMenu');
 
+    /*--- bloqueio de conteudo para usuarios nao logados ----------------------------------------------*/    
+
+    function setCookie(name,value,days) {
+      var expires = "";
+      if (days) {
+          var date = new Date();
+          date.setTime(date.getTime() + (days*24*60*60*1000));
+          expires = "; expires=" + date.toUTCString();
+      }
+        document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+    }
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+    function eraseCookie(name) {   
+        document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    }    
+
+    const body = document.querySelector('body');    
+
+    function checkUserRole(){
+      if(body.classList.contains('logged-in')){      
+        setCookie('userRole', 'logado', 30);
+      }else{      
+        setCookie('userRole', 'anonimo', 30);
+      }
+    }     
+    
+    if(body.classList.contains('single-post')){      
+      
+      checkUserRole();      
+
+      const userRole = getCookie('userRole');
+      const posts = getCookie('posts');        
+      
+      if((userRole == 'anonimo') && (!posts)){          
+          setCookie('posts', 1, 30)
+          console.log('Usuário leu o primeiro post');
+      }else if((userRole == 'anonimo') && (posts == 1)){
+          console.log('numero de posts excedido');
+          console.log('Total de posts = ' + getCookie('posts'));
+          document.querySelector('body').classList.add('blocked');
+          document.querySelector('#limite-leitura').classList.add('active');
+
+      }else{
+          eraseCookie('posts');          
+      }
+
+    }
+
+    
+
+    /*--------------------------------------------------------------------------------------------------*/
+
     if (mobile) {
       $('.menu-menu-secundario-container')
         .appendTo('.menu-menu-principal-container')
@@ -91,28 +152,21 @@
         ],
       });
     }
-    $('.footer-1 .patrocinadores').slick({
-      slidesToShow: 4,
-      dots: false,
-      infinite: false,
-      arrows: false,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            autoplay: true,
-            dots: false,
-            infinite: true,
-            arrows: false,
-            adaptiveHeight: true,
-            fade: false,
-            autoplaySpeed: 3000,
-          },
-        },
-      ],
-    });
+
+    if(mobile){
+      $('.footer-1 .patrocinadores').slick({             
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        dots: false,
+        infinite: true,
+        arrows: false,
+        adaptiveHeight: true,
+        fade: false,
+        autoplaySpeed: 3000,           
+      });
+    }
+    
 
 
     /*---- DOWNLOAD USUARIOS --------------------------------------------------------------------------*/

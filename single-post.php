@@ -90,5 +90,15 @@
 </section>
 
 
+<div id="limite-leitura"> 
+  <div class="overlay">
+  <div class="content">
+    <h3>Você atingiu o limite de leitura para usuários não cadastrados.</h3>
+    <p>Mas não se preocupe, <a href="https://fortfoodservice.mediabrand.com.br/wp-login.php?action=register" class="btn">cadastre-se agora mesmo</a><BR/>e tenha acesso ilimitado ao nosso conteúdo!</p>    
+    <p><a href="https://fortfoodservice.mediabrand.com.br/wp-login.php">Já é cadastrado? Faça login!</a></p>
+  </div>
+  </div>  
+</div>
+
 
 <?php get_footer(); ?>

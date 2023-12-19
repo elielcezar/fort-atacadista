@@ -60,13 +60,20 @@
             <div class="row menu">
               <?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>              
               <div class="login">
-                <ul>
-                  <li>
-                    <a href="https://fortfoodservice.mediabrand.com.br/wp-login.php?action=register" class="cadastrese">Cadastre-se Gratuitamente</a>
-                  </li>
-                  <li>
-                    <a href="https://fortfoodservice.mediabrand.com.br/wp-login.php" class="entrar">Entrar</a>
-                  </li>
+                <ul>                  
+                  <?php 
+                    if(is_user_logged_in()) { ?>
+                      <li>
+                        <a href="<?php echo wp_logout_url( home_url() ); ?>" class="entrar">Sair</a>
+                      </li>              
+                    <?php }else{ ?>
+                      <li>
+                        <a href="https://fortfoodservice.mediabrand.com.br/wp-login.php?action=register" class="cadastrese">Cadastre-se Gratuitamente</a>
+                      </li>
+                      <li>
+                        <a href="https://fortfoodservice.mediabrand.com.br/wp-login.php" class="entrar">Entrar</a>
+                      </li>
+                    <?php } ?>
                 </ul>
               </div>
             </div>

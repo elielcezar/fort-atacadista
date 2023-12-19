@@ -74,6 +74,9 @@ body {
   font-size: 16px;
   font-weight: 500;
 }
+body.blocked {
+  overflow: hidden;
+}
 
 * {
   box-sizing: border-box;
@@ -2121,6 +2124,65 @@ section.patrocinado .container .row .col-2 p {
 }
 .single-post #principal .conteudo #compartilhe .container ul li.linkedin a {
   background-image: url(img/ico-linkedin.png);
+}
+.single-post #limite-leitura {
+  position: fixed;
+  z-index: 5000;
+  height: 140vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.single-post #limite-leitura.active {
+  display: block;
+}
+.single-post #limite-leitura .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.95) 100%);
+  display: flex;
+  align-items: flex-end;
+}
+.single-post #limite-leitura .overlay .content {
+  width: 100%;
+  padding: 10vh 50px;
+  background: #fff;
+  text-align: center;
+}
+.single-post #limite-leitura .overlay .content h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #b50d0d;
+  max-width: 600px;
+  margin: 0 auto 60px auto;
+}
+.single-post #limite-leitura .overlay .content p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 36px;
+}
+.single-post #limite-leitura .overlay .content p a {
+  font-weight: 800;
+  color: #b50d0d;
+}
+.single-post #limite-leitura .overlay .content a.btn {
+  display: inline-block;
+  font-weight: 800;
+  color: #ffdb13;
+  padding: 5px 20px;
+  background: #b50d0d;
+  border-radius: 50px;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+.single-post #limite-leitura .overlay .content a.btn:hover {
+  background: #ffdb13;
+  color: #b50d0d;
 }
 
 /*--- FORNECEDORES  ----------------------------------------------------------------------------------*/
